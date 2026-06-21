@@ -9,12 +9,12 @@ export default function CategoryGrid() {
   const t = useTranslation(language);
 
   const categories = [
-    { slug: 'dresses', en: 'Dresses', ar: 'فساتين', fr: 'Robes', es: 'Vestidos', emoji: '👗', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600' },
-    { slug: 'abayas', en: 'Abayas', ar: 'عبايات', fr: 'Abayas', es: 'Abayas', emoji: '🥻', image: 'https://images.unsplash.com/photo-1618436917352-cd3d11ea4d15?w=600' },
-    { slug: 'bags', en: 'Bags', ar: 'حقائب', fr: 'Sacs', es: 'Bolsos', emoji: '👜', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600' },
+    { slug: 'dresses', en: 'Dresses', ar: 'فساتين', fr: 'Robes', es: 'Vestidos', emoji: '👗', image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=600' },
+    { slug: 'abayas', en: 'Abayas', ar: 'عبايات', fr: 'Abayas', es: 'Abayas', emoji: '🥻', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=600' },
+    { slug: 'bags', en: 'Bags', ar: 'حقائب', fr: 'Sacs', es: 'Bolsos', emoji: '👜', image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600' },
     { slug: 'shoes', en: 'Shoes', ar: 'أحذية', fr: 'Chaussures', es: 'Zapatos', emoji: '👠', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600' },
-    { slug: 'accessories', en: 'Accessories', ar: 'إكسسوارات', fr: 'Accessoires', es: 'Accesorios', emoji: '💎', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600' },
-    { slug: 'perfumes', en: 'Perfumes', ar: 'عطور', fr: 'Parfums', es: 'Perfumes', emoji: '🌸', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=600' },
+    { slug: 'accessories', en: 'Accessories', ar: 'إكسسوارات', fr: 'Accessoires', es: 'Accesorios', emoji: '💎', image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600' },
+    { slug: 'perfumes', en: 'Perfumes', ar: 'عطور', fr: 'Parfums', es: 'Perfumes', emoji: '🌸', image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600' },
   ];
 
   return (
