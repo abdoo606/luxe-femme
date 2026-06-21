@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Tajawal:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --card: #ffffff;
+  --border: #e5e5e5;
+}
+
+html.dark {
+  --bg: #0a0a0a;
+  --text: #f5f5f5;
+  --card: #1a1a1a;
+  --border: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Tajawal', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* الوضع الساطع (افتراضي) */
+.card-bg {
+  background-color: #ffffff;
+}
+
+.text-main {
+  color: #1a1a1a;
+}
+
+/* الوضع المظلم */
+html.dark .card-bg {
+  background-color: #1a1a1a;
+}
+
+html.dark .text-main {
+  color: #f5f5f5;
+}
+
+html.dark .bg-white {
+  background-color: #1a1a1a !important;
+}
+
+html.dark .text-gray-900 {
+  color: #f5f5f5 !important;
+}
+
+html.dark .text-gray-700 {
+  color: #d1d1d1 !important;
+}
+
+html.dark .text-gray-600 {
+  color: #a0a0a0 !important;
+}
+
+html.dark .text-gray-500 {
+  color: #888 !important;
+}
+
+html.dark .border {
+  border-color: #333 !important;
+}
+
+html.dark .bg-gray-100 {
+  background-color: #1a1a1a !important;
+}
+
+html.dark .bg-gray-50 {
+  background-color: #1a1a1a !important;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: #1a1a1a !important;
+  color: #f5f5f5 !important;
+  border-color: #333 !important;
+}
+
+/* الأزرار */
+.btn-primary {
+  background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+html.dark .btn-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  color: #000;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(245,158,11,0.4);
+}
+
+.product-image {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+/* تأثيرات جميلة */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+html.dark .glass {
+  background: rgba(26, 26, 26, 0.7);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* انيميشن */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* سكرول بار جميل */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 5px;
+}
